@@ -1,5 +1,5 @@
 export default function renderNavbar() {
-  const navBar = document.createElement("div");
+  const navBar = document.createElement("header");
   navBar.classList.add("nav");
   const title = document.createElement("h1");
   title.textContent = "Bella Ristorante Zestoso";
