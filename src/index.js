@@ -1,6 +1,6 @@
-import renderMain from "./pages/mainpage";
+import renderNavbar from "./components/navbar";
 import "./styles/style.css";
 
 const content = document.querySelector("#content");
 
-content.appendChild(renderMain());
+content.appendChild(renderNavbar());

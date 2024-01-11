@@ -1,6 +1,11 @@
+:root {
+  --black-transparent: rgba(0, 0, 0, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,15 +16,23 @@ body {
   min-height: 100vh;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--black-transparent);
   color: white;
   gap: 15px;
   flex-direction: column;
+  width: 100%;
 }
 
 .nav h1 {
