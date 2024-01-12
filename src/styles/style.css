@@ -77,4 +77,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  color: white;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 100%;
 }
