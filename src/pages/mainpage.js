@@ -7,4 +7,6 @@ export default function renderMain(content) {
   contentBox.classList.add("contentbox");
 
   content.appendChild(contentBox);
+
+  return contentBox;
 }

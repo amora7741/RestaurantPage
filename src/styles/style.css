@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
@@ -48,18 +49,32 @@ body {
 
 .buttoncontainer button {
   border: none;
+  border-bottom: 1px solid white;
   background-color: transparent;
   color: inherit;
-  font-family: inherit;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.buttoncontainer button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+  transform: translateY(-0.25em);
 }
 
 .contentbox {
-  width: 500px;
+  width: 700px;
   padding: 30px;
   overflow: hidden;
   transition: height 0.5s ease;
   background-color: var(--black-transparent);
   margin: auto;
+}
+
+.boxinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }

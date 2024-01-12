@@ -3,6 +3,6 @@ import renderHome from "./pages/home";
 import "./styles/style.css";
 
 const content = document.querySelector("#content");
-const contentBox = document.querySelector(".contentbox");
+const contentBox = renderMain(content);
 
-renderMain(content);
+contentBox.appendChild(renderHome());
