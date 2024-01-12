@@ -63,7 +63,7 @@ body {
 }
 
 .contentbox {
-  width: 700px;
+  width: 40vw;
   padding: 30px;
   overflow: hidden;
   transition: height 0.5s ease;
