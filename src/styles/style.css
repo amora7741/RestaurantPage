@@ -105,10 +105,11 @@ img {
 .itemcontainer {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 30px;
   gap: 15px;
   background-color: var(--black-transparent);
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 1.3rem;
 }
