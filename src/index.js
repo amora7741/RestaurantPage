@@ -8,9 +8,21 @@ const content = document.querySelector("#content");
 const contentBox = renderMain(content);
 
 function switchToPage(pageFunction) {
-  const newPage = pageFunction();
-  contentBox.innerHTML = "";
-  contentBox.appendChild(newPage);
+  contentBox.classList.add("fade-out");
+
+  setTimeout(() => {
+    contentBox.innerHTML = "";
+    const newPage = pageFunction();
+    contentBox.appendChild(newPage);
+
+    contentBox.classList.remove("fade-out");
+    contentBox.classList.add("fade-in");
+
+    contentBox.addEventListener("transitionend", function handler() {
+      contentBox.classList.remove("fade-in");
+      contentBox.removeEventListener("transitionend", handler);
+    });
+  }, 300);
 }
 
 document.addEventListener("DOMContentLoaded", function () {

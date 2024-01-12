@@ -65,10 +65,18 @@ body {
 .contentbox {
   width: 40vw;
   padding: 30px;
-  overflow: hidden;
-  transition: height 0.5s ease;
   background-color: var(--black-transparent);
   margin: auto;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .boxinfo {
