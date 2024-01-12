@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 1rem;
 }
 
 .nav {
@@ -63,7 +64,7 @@ body {
 }
 
 .contentbox {
-  width: 40vw;
+  width: auto;
   padding: 30px;
   background-color: var(--black-transparent);
   margin: auto;
@@ -90,7 +91,24 @@ body {
 }
 
 img {
-  width: 50%;
+  width: 45%;
   height: auto;
   border-radius: 100%;
+}
+
+.menucontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.itemcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  background-color: var(--black-transparent);
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
