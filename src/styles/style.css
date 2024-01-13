@@ -61,7 +61,7 @@ body {
   border-bottom: 1px solid white;
   background-color: transparent;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
   transition: box-shadow 0.25s, transform 0.25s;
 }
@@ -72,11 +72,11 @@ body {
 }
 
 .contentbox {
-  width: 50vw;
+  width: auto;
   padding: 30px;
   background-color: var(--black-transparent);
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .fade-out {
@@ -99,7 +99,7 @@ body {
 }
 
 img {
-  width: 45%;
+  width: 40%;
   height: auto;
   border-radius: 100%;
 }
@@ -113,7 +113,7 @@ img {
 .itemcontainer {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 15px;
   gap: 15px;
   background-color: var(--black-transparent);
   align-items: center;
